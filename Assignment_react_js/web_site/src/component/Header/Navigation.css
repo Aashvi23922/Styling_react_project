@@ -1,0 +1,63 @@
+.main_navi{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    color: gray;
+    background-color: transparent;
+    position: sticky;
+}
+img{
+    filter: contrast(2);
+}
+.logo_img{
+    background-color: rgb(201, 197, 204);
+}
+.navi_logo{
+   flex: 1.9;
+}
+.main_navi  .nav_scroll .nav-link.active{
+    color: aquamarine;
+}
+.main_navi  .nav_scroll .nav-link{
+    position: relative;
+}
+.main_navi  .nav_scroll .nav-link::before{
+    width:100%;
+	height:1px;
+	background:#ff4800;
+	content:"";
+	position:absolute;
+	bottom:0;
+	left:0;
+	transform:scaleY(0);
+	transition:0.3s;
+}
+.main_navi  .nav_scroll .nav-link:hover:before,
+.main_navi  .nav_scroll .nav-link.active:before{
+    transform:scaleY(.9);
+}
+.nav_scroll{
+    flex: 1;
+    color: rgb(169, 154, 130);
+}
+#navbarScrollingDropdown{
+   color: rgb(169, 154, 130);
+}
+.nav_scroll a{
+    font-size: 19px;
+    letter-spacing: 1.5px;
+}
+.bttn_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.input_ input{
+    padding: 5px 35px;
+    border-radius: 5px;
+    outline: none;
+    border: .5px solid gray;
+    background-color: transparent;
+    text-align: start;
+}
