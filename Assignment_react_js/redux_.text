@@ -14,5 +14,3 @@ Ans : React pure components are the components that do not re-render when the va
       its purpose?
 Ans : The second argument that can optionally be passed to setState is a callback function which gets called immediately after the setState is completed and the components get re-rendered.
 
-(5)   
-
